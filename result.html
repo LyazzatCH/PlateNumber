@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <p><strong>Model Accuracy:</strong> {{ accuracy }}</p>
+    <p><strong>Detected Characters:</strong> {{ predictions }}</p>
+    <h2>Image with Bounding Boxes and Predictions</h2>
+    <img src="{{ result_img_url }}" alt="Result Image">
+    <img src="{{ bbox_img_url }}" alt="Bounding Boxes">
+    <a href="{{ url_for('index') }}">Upload another image</a>
+</body>
+</html>
